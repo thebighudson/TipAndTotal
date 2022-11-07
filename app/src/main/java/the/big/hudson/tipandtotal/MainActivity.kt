@@ -25,7 +25,6 @@ class MainActivity : AppCompatActivity() {
         val calculateButton = this.findViewById<Button>(R.id.calculateButton)
         calculateButton.setOnClickListener {
 
-            /* WHY IS THE BELOW LINE CRASHING THE APP???? */
             val bill = this.findViewById<TextView>(R.id.billInputTextField)
             if (bill.text.toString().equals("")) {
                 infoTextView.text = "Must provide a bill amount";

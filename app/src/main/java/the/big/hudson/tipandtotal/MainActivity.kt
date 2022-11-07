@@ -27,10 +27,21 @@ class MainActivity : AppCompatActivity() {
 
             /* WHY IS THE BELOW LINE CRASHING THE APP???? */
             val bill = this.findViewById<TextView>(R.id.billInputTextField)
+            if (bill.text.toString().equals("")) {
+                infoTextView.text = "Must provide a bill amount";
+                return@setOnClickListener
+            }
+
             val billValue = bill.text.toString().toDouble()
 
             val tip = this.findViewById<TextView>(R.id.tipInputText)
+            if (tip.text.toString().equals("")) {
+                infoTextView.text = "Must provide a tip amount";
+                return@setOnClickListener
+            }
+
             val tipValue = tip.text.toString().toDouble() / 100
+
             val tipped = billValue * tipValue
             val total = tipped + billValue
 

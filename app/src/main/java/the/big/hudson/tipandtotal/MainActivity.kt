@@ -13,6 +13,7 @@ import android.view.View.VISIBLE
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import the.big.hudson.tipandtotal.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

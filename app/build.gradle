@@ -11,8 +11,8 @@ android {
         applicationId "the.big.hudson.tipandtotal"
         minSdk 26
         targetSdk 32
-        versionCode 5
-        versionName "1.5"
+        versionCode 6
+        versionName "2"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }

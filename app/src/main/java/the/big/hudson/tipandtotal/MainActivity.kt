@@ -13,7 +13,6 @@ import android.view.View.VISIBLE
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import the.big.hudson.tipandtotal.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -48,6 +47,16 @@ class MainActivity : AppCompatActivity() {
             infoTextView.visibility = VISIBLE
             //Generate tip and total text and display
             infoTextView.text = "Tip: ${doubleToDollar(tipped)} Total: ${doubleToDollar(total)}"
+        }
+
+        val clearButton = this.findViewById<Button>(R.id.clearButton)
+        clearButton.setOnClickListener {
+            val billField = this.findViewById<TextView>(R.id.billInputTextField)
+            val tipField = this.findViewById<TextView>(R.id.tipInputText)
+
+            billField.text = ""
+            tipField.text = ""
+            infoTextView.text = ""
         }
     }
 

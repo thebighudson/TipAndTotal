@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
 
             val bill = this.findViewById<TextView>(R.id.billInputTextField)
             if (bill.text.toString().equals("")) {
-                infoTextView.text = "Please provide a bill amount";
+                infoTextView.text = "Please provide the bill amount";
                 return@setOnClickListener
             }
 

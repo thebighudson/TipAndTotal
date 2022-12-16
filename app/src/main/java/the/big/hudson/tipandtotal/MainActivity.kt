@@ -54,6 +54,7 @@ class MainActivity : AppCompatActivity() {
             val billField = this.findViewById<TextView>(R.id.billInputTextField)
             val tipField = this.findViewById<TextView>(R.id.tipInputText)
 
+            // Clear text field values
             billField.text = ""
             tipField.text = ""
             infoTextView.text = ""
